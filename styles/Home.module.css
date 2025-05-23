@@ -1,16 +1,15 @@
 .container {
-  padding: 0 2rem;
   min-height: 100vh;
+  padding: 2rem;
+  background-color: #eaf4ff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eef6ff;
-  font-family: sans-serif;
 }
 
 .main {
-  padding: 4rem 0;
-  flex: 1;
+  width: 100%;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,64 +17,83 @@
 
 .title {
   font-size: 2.5rem;
-  color: #0070f3;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .subtitle {
-  font-size: 1.25rem;
-  margin-top: 0.5rem;
-  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .countdown {
-  font-size: 1.5rem;
-  margin: 1.5rem 0;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  font-weight: bold;
 }
 
 .auctionCard {
-  background: #ffffff;
-  border: 1px solid #0070f3;
-  border-radius: 10px;
+  background: #fff;
+  border: 2px solid #0070f3;
+  border-radius: 12px;
   padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
-  width: 100%;
-  max-width: 400px;
   margin-bottom: 2rem;
+  width: 100%;
 }
 
-.buttonRow {
+.productImage {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.buttonGroup {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
-.button {
-  padding: 0.75rem 1.25rem;
+.buyButton {
   background-color: #0070f3;
   color: white;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-.buttonDisabled {
-  padding: 0.75rem 1.25rem;
+.buyButton:hover {
+  background-color: #005dc1;
+}
+
+.disabledButton {
   background-color: #ccc;
-  color: #666;
+  color: #444;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
 .howItWorks {
   text-align: center;
-  max-width: 600px;
+  padding: 1rem 0;
+}
+
+.howItWorks ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  text-align: left;
 }
 
 .footer {
-  width: 100%;
+  margin-top: 3rem;
+  padding: 1rem;
   text-align: center;
-  padding: 2rem 0;
-  font-size: 0.9rem;
-  background-color: #dfefff;
+  font-size: 0.875rem;
+  color: #666;
 }
